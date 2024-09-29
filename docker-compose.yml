@@ -1,0 +1,8 @@
+version: '3'
+name: node-proxy
+services:
+    proxy:
+        build: .
+        command: npm run start
+        ports:
+            - 8080:8080

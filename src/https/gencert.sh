@@ -1,0 +1,1 @@
+openssl req -new -sha256 -key cert.key -subj "/CN=$1" | openssl x509 -req -days 500 -CA rootCA.crt -CAkey rootCA.key -set_serial "$2"
